@@ -1,9 +1,23 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>gpersonas</ion-title>
+    <ion-title>Gestion de Personas</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-
-</ion-content>
+<ion-item>
+  <ion-label position="floating">Nombre</ion-label>
+  <ion-input (keyup.enter)="addPerson(name)" placeholder="Introduce el nombre" [(ngModel)]="name" required></ion-input>
+  </ion-item>
+  <ion-button expand="full" (click)="addPerson(name)">Añadir</ion-button>
+ <!--
+<div>
+  <ion-text id="empty-list" color="warning" *ngIf="people.length==0">No existen personas aún</ion-text>
+</div>
+  -->
+  <ion-grid>
+    <ion-row>
+      <ion-col *ngFor="let person of people" size-lg="12" size-sm="4">
+  <app-person [data]="person" (onremove)="removePerson($event)"></app-person>
+      </ion-col>
+    </ion-row>
+  </ion-grid>

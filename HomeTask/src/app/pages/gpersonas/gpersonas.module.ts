@@ -7,6 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { GpersonasPageRoutingModule } from './gpersonas-routing.module';
 
 import { GpersonasPage } from './gpersonas.page';
+import { PersonComponent } from './person/person.component';
 
 @NgModule({
   imports: [
@@ -15,6 +16,7 @@ import { GpersonasPage } from './gpersonas.page';
     IonicModule,
     GpersonasPageRoutingModule
   ],
-  declarations: [GpersonasPage]
+  declarations: [GpersonasPage, PersonComponent]
 })
 export class GpersonasPageModule {}
+
