@@ -1,0 +1,7 @@
+{
+  "name": "HomeTask",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
