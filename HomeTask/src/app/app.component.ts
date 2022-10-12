@@ -6,11 +6,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   public appPages = [
-    { title: 'Home', url: '/folder/Inbox', icon: 'mail' },
-    { title: 'Gestion de Personas', url: '/gpersonas', icon: 'paper-plane' },
-    { title: 'Gestion de Tareas', url: '/gtareas', icon: 'heart' },
+    { title: 'Home', url: '/folder/Inbox', icon: 'Home' },
+    { title: 'Gestion de Personas', url: '/gpersonas', icon: 'Person' },
+    { title: 'Gestion de Tareas', url: '/gtareas', icon: 'server' },
     { title: 'Asignar Tareas', url: '/atareas', icon: 'archive' },
-    { title: 'Ver Tareas Asignadas', url: '/vatareas', icon: 'trash' },
+    { title: 'Ver Tareas Asignadas', url: '/vatareas', icon: 'reader' },
   ];
+  public labels: any
   constructor() {}
 }

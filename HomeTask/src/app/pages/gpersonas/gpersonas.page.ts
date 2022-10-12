@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Person } from 'src/app/pages/gpersonas/person/person.component';
+import { DataService, Person } from './services/data.service';
 
 @Component({
   selector: 'app-gpersonas',
@@ -8,22 +8,16 @@ import { Person } from 'src/app/pages/gpersonas/person/person.component';
 })
 export class GpersonasPage  {
 
-  constructor() { }
+  constructor(private data: DataService) {}
 
-  name:string="David";
-  people:Person[]=[];
-  id:number=0;
-
-  addPerson(_name:string){
-    this.people.push({id:this.id++,name:_name});
-    this.name="";
+  refresh(ev) {
+    setTimeout(() => {
+      ev.detail.complete();
+    }, 3000);
   }
 
-  removePerson(id:number){
-    var index = this.people.findIndex(p=>p.id==id);
-    if(index>=0){
-      this.people.splice(index,1);
-    }
+  getPersons(): Person[] {
+    return this.data.getPersons();
   }
 
 }

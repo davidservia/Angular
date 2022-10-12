@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Person } from 'src/app/pages/gpersonas/person/person.component';
 
 @Component({
   selector: 'app-folder',

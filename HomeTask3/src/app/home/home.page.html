@@ -1,6 +1,8 @@
-<ion-header>
+<ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>Gestion de Personas</ion-title>
+    <ion-title>
+      Inbox
+    </ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -18,6 +20,6 @@
   </ion-header>
   
   <ion-list>
-    <app-person *ngFor="let person of getPersons()" [person]="person"></app-person>
+    <app-message *ngFor="let message of getMessages()" [message]="message"></app-message>
   </ion-list>
 </ion-content>
