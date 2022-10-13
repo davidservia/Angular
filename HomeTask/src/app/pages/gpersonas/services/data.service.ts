@@ -5,7 +5,7 @@ export interface Person {
   apodo: string;
   date: string;
   id: number;
-  
+  read: boolean;
 }
 
 @Injectable({
@@ -16,59 +16,39 @@ export class DataService {
     {
       name: 'David Servia',
       apodo: 'ErPepe',
-      date: '12/07/1996',
+      date: 'https://i.postimg.cc/NKt1ZGFp/brad-pitt.jpg',
       id: 0,
-      
+      read: true
     },
     {
       name: 'Lauren Ruthford',
       apodo: 'Long time no chat',
-      date: '6:12 AM',
+      date: 'https://i.postimg.cc/wtTDTWhN/emma.jpg',
       id: 1,
-      
+      read: true
     },
     {
       name: 'Jordan Firth',
       apodo: 'Report Results',
-      date: '4:55 AM',
+      date: 'https://i.postimg.cc/phm8KpcX/will.jpg',
       id: 2,
-      
+      read: true
     },
     {
       name: 'Bill Thomas',
       apodo: 'The situation',
-      date: 'Yesterday',
+      date: 'https://i.postimg.cc/2qchq4wK/tyson.jpg',
       id: 3,
-      
+      read: true
     },
     {
       name: 'Joanne Pollan',
       apodo: 'Updated invitation: Swim lessons',
-      date: 'Yesterday',
+      date: 'https://i.postimg.cc/9DBG23qV/lola.jpg',
       id: 4,
-      
+      read: true
     },
-    {
-      name: 'Andrea Cornerston',
-      apodo: 'Last minute ask',
-      date: 'Yesterday',
-      id: 5,
-      
-    },
-    {
-      name: 'Moe Chamont',
-      apodo: 'Family Calendar - Version 1',
-      date: 'Last Week',
-      id: 6,
-      
-    },
-    {
-      name: 'Kelly Richardson',
-      apodo: 'Placeholder Headhots',
-      date: 'Last Week',
-      id: 7,
-      
-    }
+   
   ];
 
   constructor() { }
